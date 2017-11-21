@@ -16,7 +16,6 @@ describe('Donationss', function (){
     });
     after(function (done) {
         server.close(done);
-        // done();
     });
     beforeEach(function(){  
         while(datastore.length > 0) {
