@@ -1,3 +1,13 @@
-language: node_js
-node_js:
-- stable
+ language: node_js
+ node_js:
+ - stable
+ branches:
+   only:
+   - development
+  notifications:
+    email:
+      recipients:
+        - tarek.huawei@yahoo.com      # uae your own
+        - subziro@live.fr    # uae other (optional)
+      on_success: never        # default: change
+      on_failure: always       
