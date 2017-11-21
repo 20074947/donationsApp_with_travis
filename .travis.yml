@@ -3,8 +3,9 @@
  - stable
  script:
  - npm run coverage
+ - npm run check-coverage
  after_success:
-    - npm run report-coverage
+ - npm run report-coverage
  branches:
    only:
    - development
@@ -13,5 +14,5 @@
       recipients:
         - tarek.huawei@yahoo.com      # uae your own
         - subziro@live.fr    # uae other (optional)
-      on_success: never        # default: change
+      on_success: change       # default: change
       on_failure: always       
